@@ -1,0 +1,50 @@
+.card-cars{
+    margin: 0 12px;
+    margin-bottom: 12px;
+    padding: 24px;
+    height:fit-content;
+}
+.card-body{
+    padding-bottom: 0;
+}
+.card-img{
+    width:270px;
+    height:160px;
+}
+.text-car-type{
+    font-size:14px;
+    font-weight:500;
+    margin: 0;
+    margin-bottom:8px;
+    margin-top: 16px;
+}
+.car-pricetag{
+    font-size:16px;
+    font-weight:700;
+}
+.text-desc{
+    font-size:14px;
+    font-weight:400;
+    margin-bottom: 8px;
+}
+.card-icon{
+    margin: 8px 0;
+}
+.text-detail{
+    font-size:14px;
+    font-weight:400;
+    margin-left:8px;
+}
+.btn-cars{
+    width:100%;
+    background-color: #5CB85F;
+    color: #fff;
+    border: 1px solid #5CB85F;
+    font-weight:600;
+    margin-top: 16px;
+}
+.btn-cars:hover{
+    background-color: #fff;
+    color: #5CB85F;
+    border: 1px solid #5CB85F;
+}

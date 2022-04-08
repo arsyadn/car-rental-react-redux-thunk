@@ -1,0 +1,101 @@
+.wrapper-detail{
+    margin-top:30px !important;
+}
+.description{
+    width: 50%;
+    padding: 24px;
+    border:1px solid rgba(0,0,0,.125);
+}
+.title-desc{
+    font-size:14px;
+    font-weight:700;
+    color: #000;
+    margin-bottom: 16px;
+}
+.sec-title{
+    font-size:14px;
+    font-weight:300;
+    color: #000;
+    margin-bottom: 8px;
+}
+.description li{
+    font-size:14px;
+    font-weight:300;
+    color: #8A8A8A;
+}
+.card-cars{
+    height:fit-content;
+}
+.text-car-type{
+    font-size:14px;
+    font-weight:700;
+}
+.text-detail{
+    font-size:12px;
+    font-weight:300;
+}
+.icon-users{
+    margin-left:0 ;
+    width:12px;
+}
+.icon-else{
+    margin-left:10px;
+    width:12px;
+}
+.pricetag-wrapper{
+    margin-top:50px !important;
+    margin-bottom:24px !important;
+}
+.text-total{
+    font-size:14px;
+    font-weight:300;
+    margin-bottom: 0;
+}
+.text-pricetag{
+    font-size:14px;
+    font-weight:700;
+    margin-top: 0;
+}
+.btn-payment{
+    background-color:#5CB85F;
+    color:#fff;
+    border:1px solid #5CB85F;
+    font-size:14px;
+    font-weight:600;
+}
+.btn-payment:hover{
+    background-color: #fff;
+    color: #5CB85F;
+    border:1px solid #5CB85F;
+}
+.btn-pay-card{
+    width:100%;
+    padding:8px 50px;
+}
+.btn-pay-outside{
+    margin: auto;
+    margin-top: 24px;
+}
+.first-ul{
+    margin-bottom: 16px;
+}
+.sec-ul{
+    margin-bottom:26px;
+}
+.third-ul{
+    margin-bottom:0;
+}
+.card-img{
+    width:270px;
+    height:160px;
+}
+@media (max-width: 768px){
+    .description{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .card-cars{
+        width:100%;
+        margin: auto;
+    }
+}
