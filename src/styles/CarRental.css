@@ -86,7 +86,7 @@ select{
 }
 .book-car{
     bottom: 5%;
-    position: absolute !important;
+    position: absolute;
 }
 .listcar-wrapper{
     margin-top:100px;
@@ -115,5 +115,11 @@ select{
     }
     .select-date{
         width: 100% !important;
+    }
+    .book-car{
+        position: relative !important;
+    }
+    .listcar-wrapper{
+        margin-top:20px;
     }
 }

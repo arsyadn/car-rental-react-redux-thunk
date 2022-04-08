@@ -21,7 +21,8 @@ const BookingCar = () => {
   
     return(
     <div className="relative">
-        <div className="searchbar d-flex justify-content-center">
+        <div className="searchbar">
+            <div className="d-flex justify-content-center">
             <div className="book-car mx-auto shadow p-3 mb-5 bg-white rounded absolute">
                 <div className="book-wrap d-flex flex-column flex-lg-row">
                     <div className="book-type">
@@ -54,6 +55,7 @@ const BookingCar = () => {
                         <Button className="btn-cari" onClick={reqData}>Cari Mobil</Button>
                     </div>
                 </div>
+            </div>
             </div>
             <div className="listcar-wrapper">
              { listCar.length > 0 && <CardCar listCar={listCar}/>}
