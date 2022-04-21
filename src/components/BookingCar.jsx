@@ -1,23 +1,15 @@
 import '../styles/CarRental.css';
 import { Form, Button } from 'react-bootstrap';
-import {useState} from 'react';
-import axios from 'axios';
 import CardCar from './CardCar';
 import Footer from '../Layout/Footer';
+import { useDispatch, useSelector } from 'react-redux';
+import {fetchCar} from '../redux/action/carAction';
 
 const BookingCar = () => {
-    const [listCar, setListCar] = useState([]);
 
-    const reqData = async () => {
-        const {data} = await axios.get('https://rent-cars-api.herokuapp.com/admin/car');
-        setListCar(data);
-        console.log(data);
-
-    }
-
-    // useEffect(() =>{
-    //     reqData();
-    // }, []);
+    // Middleware
+    const dispatch = useDispatch();
+    const {carData} = useSelector((globalStore) => globalStore.carReducer);
   
     return(
     <div className="relative">
@@ -52,13 +44,13 @@ const BookingCar = () => {
                         </select>
                     </div>
                     <div className="d-flex align-items-lg-end align-items-center flex-column flex-lg-row">
-                        <Button className="btn-cari" onClick={reqData}>Cari Mobil</Button>
+                        <Button className="btn-cari" onClick={() => dispatch(fetchCar())}>Cari Mobil</Button>
                     </div>
                 </div>
             </div>
             </div>
             <div className="listcar-wrapper">
-             { listCar.length > 0 && <CardCar listCar={listCar}/>}
+             { carData.length > 0 && <CardCar listCar={carData}/>}
             </div>
            
         </div>

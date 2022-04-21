@@ -1,6 +1,4 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-// import CarRental from '../Pages/CarRental';
-// import DetailCar from '../Pages/DetailCar';
 import CarRental from '../Pages/CarRental';
 import DetailCar from '../Pages/DetailCar';
 

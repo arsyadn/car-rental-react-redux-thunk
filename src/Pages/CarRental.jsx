@@ -10,7 +10,6 @@ const CarRental = () => {
         <Header/>
         <HeroApp/>
         <BookingCar/>
-        {/* <Footer/> */}
         </>
         
     )

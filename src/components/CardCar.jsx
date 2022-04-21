@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom';
 import IconUsers from '../assets/fi_users.svg';
 import IconSettings from  '../assets/fi_settings.svg';
 import IconCalendar from '../assets/fi_calendar.svg';
+import { useSelector } from 'react-redux';
 
+const CardCar = () => {
 
+    const {carData} = useSelector((globalStore) => globalStore.carReducer);
 
-const CardCar = ({listCar}) => {
-
-    const renderData = listCar.map((data) => 
+    const renderData = carData.map((data) => 
         <Card key={data.id} className="card-cars" style={{ width: '300px' }} >
         <Card.Img variant="top" src={data.image} className="card-img"/>
         <Card.Body className="card-body">
@@ -19,15 +20,15 @@ const CardCar = ({listCar}) => {
             <Card.Text className="text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </Card.Text>
             <div className="d-flex card-icon">
                 <Image src={IconUsers} />
-                <Card.Text className="text-detail">4 orang</Card.Text>
+                <Card.Text className="text-detail">{data.passenger}</Card.Text>
             </div>
             <div className="d-flex card-icon">
                 <Image src={IconSettings} />
-                <Card.Text className="text-detail">Manual</Card.Text>
+                <Card.Text className="text-detail">{data.transmission}</Card.Text>
             </div>
             <div className="d-flex card-icon">
                 <Image src={IconCalendar} />
-                <Card.Text className="text-detail">Tahun 2020</Card.Text>
+                <Card.Text className="text-detail">{data.production}</Card.Text>
             </div>
             <Link to={`/detail/${data.id}`}><Button className="btn-cars">Pilih Mobil</Button></Link>
         </Card.Body>
